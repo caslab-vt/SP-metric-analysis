@@ -37,3 +37,19 @@ g++ Approx.cpp Read.cpp Greedy.cpp BnB.cpp SA.cpp HC.cpp TSP.h TSPSolver.cpp -o 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
 
 5. for depth estimation: put depth data in darknet/data dolder 
+
+
+Run SP analysis experiemtns:
+
+
+sudo rabbitmqctl stop_app
+sudo rabbitmqctl reset
+sudo rabbitmqctl start_app
+sudo rabbitmqctl list_queues
+
+
+./run_kernels.sh 
+
+wait a few seconds for initialization
+
+./cent_con
