@@ -8,8 +8,11 @@
  
  cd darknet_fs/darknet
  make
+ 
  sudo cp libdarknet.so /usr/local/lib/
+ 
  sudo cp include/darknet.h /usr/local/include/
+ 
  sudo ldconfig
  
 following instrcutions from https://github.com/stephanecharette/DarkHelp
