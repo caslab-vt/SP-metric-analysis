@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/amqp_sendstring.dir/amqp_sendstring.o "CMakeFiles/examples-common.dir/utils.o" "CMakeFiles/examples-common.dir/unix/platform_utils.o" -o amqp_sendstring  -lrabbitmq::rabbitmq 

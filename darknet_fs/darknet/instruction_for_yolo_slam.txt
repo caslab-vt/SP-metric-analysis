@@ -1,0 +1,8 @@
+for use with yolo
+
+after make
+sudo cp libdarknet.so /usr/local/lib/
+
+sudo cp include/darknet.h /usr/local/include/
+
+sudo ldconfig

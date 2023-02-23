@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/amqp_bind.dir/amqp_bind.o "CMakeFiles/examples-common.dir/utils.o" "CMakeFiles/examples-common.dir/unix/platform_utils.o" -o amqp_bind  -lrabbitmq::rabbitmq 

@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG CMakeFiles/amqp_connect_timeout.dir/amqp_connect_timeout.c.o "CMakeFiles/examples-common.dir/utils.c.o" "CMakeFiles/examples-common.dir/unix/platform_utils.c.o" -o amqp_connect_timeout  -Wl,-rpath,/home/nvidia/rabbitmq-c/build/librabbitmq ../librabbitmq/librabbitmq.so.0.12.0 

@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=lib
+includedir=${prefix}/include
+
+Name: SimpleAmqpClient
+Description: C++ wrapper of rabbitmq-c AMQP client library
+Version: 2.6.0
+Requires.private: librabbitmq
+Libs: -L${libdir} -lSimpleAmqpClient
+Libs.private:  -L/usr/lib -lboost_chrono -lboost_system
+CFlags: -I${includedir}

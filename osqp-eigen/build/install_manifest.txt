@@ -1,0 +1,17 @@
+/home/nvidia/osqp/build/lib/libOsqpEigen.so.0.7.0
+/home/nvidia/osqp/build/lib/libOsqpEigen.so
+/home/nvidia/osqp/build/include/OsqpEigen/OsqpEigen.h
+/home/nvidia/osqp/build/include/OsqpEigen/Constants.hpp
+/home/nvidia/osqp/build/include/OsqpEigen/SparseMatrixHelper.hpp
+/home/nvidia/osqp/build/include/OsqpEigen/SparseMatrixHelper.tpp
+/home/nvidia/osqp/build/include/OsqpEigen/Data.hpp
+/home/nvidia/osqp/build/include/OsqpEigen/Data.tpp
+/home/nvidia/osqp/build/include/OsqpEigen/Settings.hpp
+/home/nvidia/osqp/build/include/OsqpEigen/Solver.hpp
+/home/nvidia/osqp/build/include/OsqpEigen/Solver.tpp
+/home/nvidia/osqp/build/include/OsqpEigen/Debug.hpp
+/home/nvidia/osqp/build/lib/cmake/OsqpEigen/OsqpEigenConfigVersion.cmake
+/home/nvidia/osqp/build/lib/cmake/OsqpEigen/OsqpEigenConfig.cmake
+/home/nvidia/osqp/build/lib/cmake/OsqpEigen/OsqpEigenTargets.cmake
+/home/nvidia/osqp/build/lib/cmake/OsqpEigen/OsqpEigenTargets-release.cmake
+/home/nvidia/osqp/build/share/cmake/osqp-eigen/package.xml

@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/amqp_producer.dir/amqp_producer.o "CMakeFiles/examples-common.dir/utils.o" "CMakeFiles/examples-common.dir/unix/platform_utils.o" -o amqp_producer  -lrabbitmq::rabbitmq 

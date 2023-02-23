@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG CMakeFiles/test_basic.dir/test_basic.c.o -o test_basic  ../librabbitmq/librabbitmq.a /usr/lib/aarch64-linux-gnu/libssl.so /usr/lib/aarch64-linux-gnu/libcrypto.so -lrt -pthread 

@@ -1,0 +1,61 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/nvidia/rabbitmq-c/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3e5bb/fast && /usr/bin/make  -f CMakeFiles/cmTC_3e5bb.dir/build.make CMakeFiles/cmTC_3e5bb.dir/build
+make[1]: Entering directory '/home/nvidia/rabbitmq-c/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3e5bb.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu99 -o CMakeFiles/cmTC_3e5bb.dir/src.c.o -c /home/nvidia/rabbitmq-c/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3e5bb
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e5bb.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_3e5bb.dir/src.c.o -o cmTC_3e5bb 
+CMakeFiles/cmTC_3e5bb.dir/src.c.o: In function `main':
+src.c:(.text+0x48): undefined reference to `pthread_create'
+src.c:(.text+0x50): undefined reference to `pthread_detach'
+src.c:(.text+0x58): undefined reference to `pthread_cancel'
+src.c:(.text+0x64): undefined reference to `pthread_join'
+src.c:(.text+0x74): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3e5bb.dir/build.make:98: recipe for target 'cmTC_3e5bb' failed
+make[1]: *** [cmTC_3e5bb] Error 1
+make[1]: Leaving directory '/home/nvidia/rabbitmq-c/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_3e5bb/fast' failed
+make: *** [cmTC_3e5bb/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY failed with the following output:
+Change Dir: /home/nvidia/rabbitmq-c/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_682ec/fast && /usr/bin/make  -f CMakeFiles/cmTC_682ec.dir/build.make CMakeFiles/cmTC_682ec.dir/build
+make[1]: Entering directory '/home/nvidia/rabbitmq-c/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_682ec.dir/src.c.o
+/usr/bin/cc -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -fvisibility-inlines-hidden -std=gnu99 -o CMakeFiles/cmTC_682ec.dir/src.c.o -c /home/nvidia/rabbitmq-c/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option '-fvisibility-inlines-hidden' is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_682ec
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_682ec.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_682ec.dir/src.c.o -o cmTC_682ec 
+make[1]: Leaving directory '/home/nvidia/rabbitmq-c/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }

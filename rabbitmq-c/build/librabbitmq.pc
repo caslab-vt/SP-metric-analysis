@@ -1,0 +1,13 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: rabbitmq-c
+Description: An AMQP 0-9-1 client library
+Version: 
+URL: https://github.com/alanxz/rabbitmq-c
+Requires.private: 
+Libs: -L${libdir} -lrabbitmq
+Libs.private:  -lrt -lssl -lcrypto -pthread
+CFlags: -I${includedir}

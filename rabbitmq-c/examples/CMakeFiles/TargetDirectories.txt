@@ -1,0 +1,13 @@
+/home/nvidia/rabbitmq-c/examples/CMakeFiles/examples-common.dir
+/home/nvidia/rabbitmq-c/examples/CMakeFiles/amqp_sendstring.dir
+/home/nvidia/rabbitmq-c/examples/CMakeFiles/amqp_rpc_sendstring_client.dir
+/home/nvidia/rabbitmq-c/examples/CMakeFiles/amqp_exchange_declare.dir
+/home/nvidia/rabbitmq-c/examples/CMakeFiles/amqp_listen.dir
+/home/nvidia/rabbitmq-c/examples/CMakeFiles/amqp_producer.dir
+/home/nvidia/rabbitmq-c/examples/CMakeFiles/amqp_connect_timeout.dir
+/home/nvidia/rabbitmq-c/examples/CMakeFiles/amqp_consumer.dir
+/home/nvidia/rabbitmq-c/examples/CMakeFiles/amqp_unbind.dir
+/home/nvidia/rabbitmq-c/examples/CMakeFiles/amqp_bind.dir
+/home/nvidia/rabbitmq-c/examples/CMakeFiles/amqp_listenq.dir
+/home/nvidia/rabbitmq-c/examples/CMakeFiles/edit_cache.dir
+/home/nvidia/rabbitmq-c/examples/CMakeFiles/rebuild_cache.dir

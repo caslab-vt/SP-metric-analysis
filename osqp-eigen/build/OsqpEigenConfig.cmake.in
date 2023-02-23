@@ -1,0 +1,11 @@
+set(OsqpEigen_VERSION @PACKAGE_VERSION@)
+
+@PACKAGE_INIT@
+
+@PACKAGE_DEPENDENCIES@
+
+include("${CMAKE_CURRENT_LIST_DIR}/OsqpEigenTargets.cmake")
+
+
+
+@INCLUDED_CONTENT@
