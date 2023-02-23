@@ -3,6 +3,8 @@
  
  1. Install yolodynaslam: follow directions from original repository
  https://github.com/bijustin/YOLO-DynaSLAM
+ extract vocabulary files from original repo
+ Dataset used for experiments: rgbd_dataset_freiburg3_walking_xyz and rgbd_dataset_freiburg3_walking_halfsphere
  
  2. Install darknet
  
