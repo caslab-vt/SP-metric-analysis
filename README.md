@@ -27,7 +27,22 @@ cd RRT_CUDA
 make
 
 4. Install TSP-Solver: original repo:
-https://github.com/aashusingh/TSP-Solver 
+https://github.com/aashusingh/TSP-Solver
+
+5. Install MPC
+install osqp mpc:
+https://github.com/osqp/osqp
+install cpp wrapper 
+https://github.com/robotology/osqp-eigen
+
+link forreference only, do not clone, code is in this repo
+
+cd osqp-eigen
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX:PATH=<custom-folder> ../
+make
+make install
 
 INstall rabbutmq
 follow original repository instruciotns 
@@ -39,6 +54,8 @@ For rabbitmq integration with TSP:
 g++ Approx.cpp Read.cpp Greedy.cpp BnB.cpp SA.cpp HC.cpp TSP.h TSPSolver.cpp -o tsp -lSimpleAmqpClient -lboost_chrono -lboost_system -lrabbitmq -lrt -lssl -lcrypto -ldl -lpthread
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
+
+complie cent.cpp similarly
 
 5. for depth estimation: put depth data in darknet/data dolder 
 
