@@ -57,6 +57,9 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
 
 complie cent.cpp similarly
 
+g++ cent_con.cpp -o cent_con -lSimpleAmqpClient -lboost_chrono -lboost_system -lrabbitmq -lrt -lssl -lcrypto -ldl -lpthread
+
+
 5. for depth estimation: put depth data in darknet/data dolder 
 
 
